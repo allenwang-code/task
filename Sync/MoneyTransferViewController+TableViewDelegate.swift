@@ -27,8 +27,9 @@ extension MoneyTranferViewController: UITableViewDelegate, UITableViewDataSource
     
     fileprivate func hideHeader(_ tabViewController: MarketTabViewController, isVisible: Bool) {
         if !isVisible {
+            tabViewController.marketLabel.isHidden = true
             tabViewController.HeaderView.frame = CGRect(x:0,
-                                                    y: -50,
+                                                    y: -55,
                                                     width: tabViewController.HeaderView.frame.size.width,
                                                     height: tabViewController.HeaderView.frame.size.height)
             tabViewController.containerView.frame = CGRect(x:0,
@@ -36,18 +37,16 @@ extension MoneyTranferViewController: UITableViewDelegate, UITableViewDataSource
                                                        width: tabViewController.containerView.frame.size.width,
                                                        height: getScreenSize().height - 65)
         } else{
+            tabViewController.marketLabel.isHidden = false
             tabViewController.HeaderView.frame = CGRect(x:0,
                                                         y: 0,
                                                         width: tabViewController.HeaderView.frame.size.width,
                                                         height: tabViewController.HeaderView.frame.size.height)
             tabViewController.containerView.frame = CGRect(x:0,
-                                                           y: 115,
+                                                           y: 130,
                                                            width: tabViewController.containerView.frame.size.width,
-                                                           height:originContainerViewHeight)
-            
-            
-            
-            
+                                                           height:originContainerViewHeight-130)
+    
         }
     }
     

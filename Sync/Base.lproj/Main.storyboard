@@ -46,13 +46,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-ta-Sfm">
-                                <rect key="frame" x="0.0" y="20" width="375" height="115"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLI-f2-lvM">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
                                         <subviews>
                                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="eEB-dJ-Kvh">
-                                                <rect key="frame" x="325" y="19" width="45" height="45"/>
+                                                <rect key="frame" x="325" y="24" width="45" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="Fk5-20-zAJ"/>
                                                     <constraint firstAttribute="width" constant="45" id="kxU-Jq-HhQ"/>
@@ -63,7 +63,7 @@
                                                 </connections>
                                             </searchBar>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Market" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qp-R5-oRc">
-                                                <rect key="frame" x="18" y="25" width="88.5" height="32.5"/>
+                                                <rect key="frame" x="18" y="30" width="88.5" height="32.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -71,14 +71,14 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.96079862117767334" green="0.9607778787612915" blue="0.96078193187713623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstItem="4Qp-R5-oRc" firstAttribute="top" secondItem="RLI-f2-lvM" secondAttribute="top" constant="25" id="8N9-dW-rQR"/>
+                                            <constraint firstItem="4Qp-R5-oRc" firstAttribute="top" secondItem="RLI-f2-lvM" secondAttribute="top" constant="30" id="8N9-dW-rQR"/>
                                             <constraint firstItem="4Qp-R5-oRc" firstAttribute="leading" secondItem="RLI-f2-lvM" secondAttribute="leading" constant="18" id="SIO-iK-yC5"/>
                                             <constraint firstAttribute="trailing" secondItem="eEB-dJ-Kvh" secondAttribute="trailing" constant="5" id="d9r-O6-0ON"/>
                                             <constraint firstItem="eEB-dJ-Kvh" firstAttribute="centerY" secondItem="4Qp-R5-oRc" secondAttribute="centerY" id="nze-aG-wcg"/>
                                         </constraints>
                                     </view>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trj-Qy-6i4">
-                                        <rect key="frame" x="0.0" y="65" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="72" width="375" height="58"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-c8-SVi">
                                                 <rect key="frame" x="0.0" y="0.0" width="675" height="50"/>
@@ -154,7 +154,7 @@
                                             <constraint firstAttribute="width" constant="375" id="7aG-cT-nAz"/>
                                             <constraint firstItem="Uhh-c8-SVi" firstAttribute="top" secondItem="Trj-Qy-6i4" secondAttribute="top" id="Ibo-kT-h7x"/>
                                             <constraint firstAttribute="trailing" secondItem="Uhh-c8-SVi" secondAttribute="trailing" id="PG1-OO-9N9"/>
-                                            <constraint firstAttribute="height" constant="50" id="YYl-O2-NjY"/>
+                                            <constraint firstAttribute="height" constant="58" id="YYl-O2-NjY"/>
                                             <constraint firstAttribute="bottom" secondItem="Uhh-c8-SVi" secondAttribute="bottom" id="jLf-RL-UgS"/>
                                         </constraints>
                                     </scrollView>
@@ -165,14 +165,14 @@
                                     <constraint firstAttribute="trailing" secondItem="RLI-f2-lvM" secondAttribute="trailing" id="CxI-Iu-GhA"/>
                                     <constraint firstAttribute="bottom" secondItem="Trj-Qy-6i4" secondAttribute="bottom" id="WDR-nt-0IC"/>
                                     <constraint firstItem="Trj-Qy-6i4" firstAttribute="top" secondItem="RLI-f2-lvM" secondAttribute="bottom" id="c7i-sO-LGT"/>
-                                    <constraint firstAttribute="height" constant="115" id="d6j-kI-fcB"/>
+                                    <constraint firstAttribute="height" constant="130" id="d6j-kI-fcB"/>
                                     <constraint firstItem="Trj-Qy-6i4" firstAttribute="leading" secondItem="kgg-ta-Sfm" secondAttribute="leading" id="hXc-al-zwU"/>
                                     <constraint firstItem="RLI-f2-lvM" firstAttribute="leading" secondItem="kgg-ta-Sfm" secondAttribute="leading" id="j5O-rF-4bo"/>
                                     <constraint firstAttribute="trailing" secondItem="Trj-Qy-6i4" secondAttribute="trailing" id="ocL-d2-UXb"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EG7-dx-9Te">
-                                <rect key="frame" x="0.0" y="135" width="375" height="483"/>
+                                <rect key="frame" x="0.0" y="130" width="375" height="488"/>
                                 <color key="backgroundColor" red="0.96079862117767334" green="0.9607778787612915" blue="0.96078193187713623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <segue destination="bwq-vK-bu0" kind="embed" id="uEc-Pg-UHb"/>
@@ -180,7 +180,7 @@
                             </containerView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Cyk-NX-yie" firstAttribute="top" secondItem="kgg-ta-Sfm" secondAttribute="top" id="A9d-n6-oYu"/>
+                            <constraint firstAttribute="top" secondItem="kgg-ta-Sfm" secondAttribute="top" id="7SA-VW-5nf"/>
                             <constraint firstItem="kgg-ta-Sfm" firstAttribute="leading" secondItem="Cyk-NX-yie" secondAttribute="leading" id="E8p-Se-Zdj"/>
                             <constraint firstItem="Cyk-NX-yie" firstAttribute="trailing" secondItem="kgg-ta-Sfm" secondAttribute="trailing" id="Loo-2x-t9E"/>
                             <constraint firstItem="Cyk-NX-yie" firstAttribute="bottom" secondItem="EG7-dx-9Te" secondAttribute="bottom" id="Mqh-gK-qLd"/>
