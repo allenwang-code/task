@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD0926A8214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0926A7214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift */; };
+		DD0926AA21458448001B440C /* Advert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0926A921458448001B440C /* Advert.swift */; };
 		DD786CAF214534D40063429D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD786CAE214534D40063429D /* AppDelegate.swift */; };
 		DD786CB1214534D40063429D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD786CB0214534D40063429D /* ViewController.swift */; };
 		DD786CB4214534D40063429D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD786CB2214534D40063429D /* Main.storyboard */; };
 		DD786CB6214534D40063429D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD786CB5214534D40063429D /* Assets.xcassets */; };
 		DD786CB9214534D40063429D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD786CB7214534D40063429D /* LaunchScreen.storyboard */; };
+		DDD20C06214549C200B0C372 /* MoneyTranferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD20C05214549C200B0C372 /* MoneyTranferViewController.swift */; };
+		DDD20C08214549D600B0C372 /* InsuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD20C07214549D600B0C372 /* InsuranceViewController.swift */; };
+		DDD20C0A214549E100B0C372 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD20C09214549E100B0C372 /* CreditViewController.swift */; };
+		DDD20C0C214549ED00B0C372 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD20C0B214549ED00B0C372 /* LoanViewController.swift */; };
+		DDD20C0E21454AEE00B0C372 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD20C0D21454AEE00B0C372 /* PageViewController.swift */; };
+		DDD20C1021454BA500B0C372 /* PageViewController+PageViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD20C0F21454BA500B0C372 /* PageViewController+PageViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD0926A7214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoneyTransferViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		DD0926A921458448001B440C /* Advert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advert.swift; sourceTree = "<group>"; };
 		DD786CAB214534D40063429D /* Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD786CAE214534D40063429D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD786CB0214534D40063429D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,12 @@
 		DD786CB5214534D40063429D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD786CB8214534D40063429D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD786CBA214534D40063429D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD20C05214549C200B0C372 /* MoneyTranferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTranferViewController.swift; sourceTree = "<group>"; };
+		DDD20C07214549D600B0C372 /* InsuranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceViewController.swift; sourceTree = "<group>"; };
+		DDD20C09214549E100B0C372 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
+		DDD20C0B214549ED00B0C372 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
+		DDD20C0D21454AEE00B0C372 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		DDD20C0F21454BA500B0C372 /* PageViewController+PageViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageViewController+PageViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,14 @@
 				DD786CB5214534D40063429D /* Assets.xcassets */,
 				DD786CB7214534D40063429D /* LaunchScreen.storyboard */,
 				DD786CBA214534D40063429D /* Info.plist */,
+				DDD20C05214549C200B0C372 /* MoneyTranferViewController.swift */,
+				DD0926A7214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift */,
+				DDD20C07214549D600B0C372 /* InsuranceViewController.swift */,
+				DDD20C09214549E100B0C372 /* CreditViewController.swift */,
+				DDD20C0B214549ED00B0C372 /* LoanViewController.swift */,
+				DDD20C0D21454AEE00B0C372 /* PageViewController.swift */,
+				DDD20C0F21454BA500B0C372 /* PageViewController+PageViewDelegate.swift */,
+				DD0926A921458448001B440C /* Advert.swift */,
 			);
 			path = Sync;
 			sourceTree = "<group>";
@@ -137,7 +161,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD786CB1214534D40063429D /* ViewController.swift in Sources */,
+				DDD20C0E21454AEE00B0C372 /* PageViewController.swift in Sources */,
+				DD0926A8214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift in Sources */,
+				DDD20C06214549C200B0C372 /* MoneyTranferViewController.swift in Sources */,
+				DDD20C0A214549E100B0C372 /* CreditViewController.swift in Sources */,
+				DD0926AA21458448001B440C /* Advert.swift in Sources */,
 				DD786CAF214534D40063429D /* AppDelegate.swift in Sources */,
+				DDD20C1021454BA500B0C372 /* PageViewController+PageViewDelegate.swift in Sources */,
+				DDD20C0C214549ED00B0C372 /* LoanViewController.swift in Sources */,
+				DDD20C08214549D600B0C372 /* InsuranceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8S62K8LW2A;
+				DEVELOPMENT_TEAM = CZY694H42E;
 				INFOPLIST_FILE = Sync/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = allenwang.Sync;
@@ -290,7 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8S62K8LW2A;
+				DEVELOPMENT_TEAM = CZY694H42E;
 				INFOPLIST_FILE = Sync/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = allenwang.Sync;

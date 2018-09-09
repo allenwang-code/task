@@ -1,24 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zVz-UA-vcS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Item 2-->
+        <scene sceneID="OgJ-DP-Uvu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="FUl-yj-x6V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HjK-nc-kmJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="s40-SQ-Ln6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="5t4-C4-svK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1MV-6R-das" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="493"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="yYb-0H-DUk">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="bwq-vK-bu0" customClass="PageViewController" customModule="Sync" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="EmS-4t-Vbn"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWz-Zg-E5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="1162"/>
+        </scene>
+        <!--Money Tranfer View Controller-->
+        <scene sceneID="Q6Z-0n-cHn">
+            <objects>
+                <viewController storyboardIdentifier="MoneyTranferViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DCY-BD-7s4" customClass="MoneyTranferViewController" customModule="Sync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sAo-iq-L6e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-ta-Sfm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEB-dJ-Kvh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Market" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qp-R5-oRc">
+                                        <rect key="frame" x="20" y="18" width="108" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.82171792328042326" green="0.82171792328042326" blue="0.82171792328042326" alpha="0.69656680045871555" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gbY-Br-MbS">
+                                <rect key="frame" x="0.0" y="106" width="375" height="561"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdvertCell" rowHeight="394" id="XbF-JP-1Ei" customClass="AdvertCell" customModule="Sync" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="394"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XbF-JP-1Ei" id="tt2-pd-bXt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="394"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mga-I7-w4j">
+                                                    <rect key="frame" x="20" y="5.5" width="335" height="382.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" secondItem="Mga-I7-w4j" secondAttribute="width" multiplier="40:35" id="ovJ-Zt-ODi"/>
+                                                    </constraints>
+                                                    <state key="normal" backgroundImage="market_picture_1"/>
+                                                    <connections>
+                                                        <action selector="AdvertBtnDidClick:" destination="XbF-JP-1Ei" eventType="touchUpInside" id="XGg-up-pPQ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Mga-I7-w4j" firstAttribute="leading" secondItem="tt2-pd-bXt" secondAttribute="leading" constant="20" id="0gv-XW-XUL"/>
+                                                <constraint firstItem="Mga-I7-w4j" firstAttribute="centerX" secondItem="tt2-pd-bXt" secondAttribute="centerX" id="4Jz-Ei-y9Q"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mga-I7-w4j" secondAttribute="trailing" constant="20" id="85x-4r-W1W"/>
+                                                <constraint firstItem="Mga-I7-w4j" firstAttribute="centerY" secondItem="tt2-pd-bXt" secondAttribute="centerY" id="SSP-AD-P72"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93335103988647461" green="0.93333089351654053" blue="0.93333488702774048" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="advertBtn" destination="Mga-I7-w4j" id="LPE-dO-Cxq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="DCY-BD-7s4" id="jm1-Ig-ylS"/>
+                                    <outlet property="delegate" destination="DCY-BD-7s4" id="FTM-nf-THR"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVA-l3-KkG">
+                                <rect key="frame" x="40" y="580" width="295" height="62"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69656680045871555" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="BPa-F5-Rx9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Compare Money Transfer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tVA-l3-KkG" firstAttribute="centerX" secondItem="Cyk-NX-yie" secondAttribute="centerX" id="CDt-cY-crv"/>
+                            <constraint firstItem="Cyk-NX-yie" firstAttribute="trailing" secondItem="tVA-l3-KkG" secondAttribute="trailing" constant="40" id="CM7-dg-jAH"/>
+                            <constraint firstItem="tVA-l3-KkG" firstAttribute="leading" secondItem="Cyk-NX-yie" secondAttribute="leading" constant="40" id="Jnd-Bc-DrL"/>
+                            <constraint firstItem="Cyk-NX-yie" firstAttribute="bottom" secondItem="tVA-l3-KkG" secondAttribute="bottom" constant="25" id="VaZ-1M-ZSE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cyk-NX-yie"/>
+                    </view>
+                    <connections>
+                        <outlet property="compareTransferBtn" destination="tVA-l3-KkG" id="xXw-xc-ZxR"/>
+                        <outlet property="tableView" destination="gbY-Br-MbS" id="V3J-g3-uzL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Trk-x5-1aV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="1156.3718140929536"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VJQ-rA-JEy">
+            <objects>
+                <viewController id="rnC-An-Lhj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JNT-rX-b0S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="krT-U6-VlK"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2oE-wa-IJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1674" y="1156"/>
+        </scene>
+        <!--Insurance View Controller-->
+        <scene sceneID="bD6-32-9IW">
+            <objects>
+                <viewController storyboardIdentifier="InsuranceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z6f-TP-zAR" customClass="InsuranceViewController" customModule="Sync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HcY-yp-FuP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.5983793199869456" green="0.84143004440000002" blue="0.62509145704005131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="I4O-FF-S9v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BpT-z0-1e7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="1863"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="BVF-Zk-in9">
+            <objects>
+                <viewController id="qZF-9b-kah" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="smt-r2-gd8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="RHK-nO-i0E"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="F2v-hz-hoY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4I-Fx-uS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="-171"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aie-ZB-jON">
+            <objects>
+                <tabBarController id="zVz-UA-vcS" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pDF-2S-sMB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qZF-9b-kah" kind="relationship" relationship="viewControllers" id="kFb-4v-5eH"/>
+                        <segue destination="FUl-yj-x6V" kind="relationship" relationship="viewControllers" id="ZQZ-FG-tZE"/>
+                        <segue destination="bwq-vK-bu0" kind="relationship" relationship="viewControllers" id="rEK-bT-gih"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XAS-U2-u1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-734" y="161"/>
+        </scene>
+        <!--Credit View Controller-->
+        <scene sceneID="skZ-yD-4rS">
+            <objects>
+                <viewController storyboardIdentifier="CreditViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CwM-P3-Pb3" customClass="CreditViewController" customModule="Sync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcz-Qu-exg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.41513434599999999" green="0.80924684270000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="kZ6-Bq-lZr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGY-6e-Mww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1630" y="1863"/>
+        </scene>
+        <!--Loan View Controller-->
+        <scene sceneID="Sy9-7w-OF1">
+            <objects>
+                <viewController storyboardIdentifier="LoanViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ixf-Dr-25D" customClass="LoanViewController" customModule="Sync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cb1-I0-YpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Jqh-Od-Yf0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLL-cv-il7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="1863"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="market_picture_1" width="1230" height="1426"/>
+    </resources>
 </document>
