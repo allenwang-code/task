@@ -77,11 +77,11 @@
                                             <constraint firstItem="eEB-dJ-Kvh" firstAttribute="centerY" secondItem="4Qp-R5-oRc" secondAttribute="centerY" id="nze-aG-wcg"/>
                                         </constraints>
                                     </view>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trj-Qy-6i4">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trj-Qy-6i4">
                                         <rect key="frame" x="0.0" y="72" width="375" height="58"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-c8-SVi">
-                                                <rect key="frame" x="0.0" y="0.0" width="675" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="535" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKw-Bj-Usu" userLabel="blackMask">
                                                         <rect key="frame" x="10" y="11" width="145" height="30"/>
@@ -124,7 +124,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzO-Rn-Axg">
-                                                        <rect key="frame" x="425" y="14" width="130" height="21"/>
+                                                        <rect key="frame" x="395" y="14" width="130" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="M2g-lG-sRk"/>
                                                             <constraint firstAttribute="width" constant="130" id="NPp-np-SWQ"/>
@@ -140,11 +140,11 @@
                                                     <constraint firstItem="40G-Ti-wgr" firstAttribute="centerY" secondItem="Uhh-c8-SVi" secondAttribute="centerY" id="7xa-0B-dPh"/>
                                                     <constraint firstItem="40G-Ti-wgr" firstAttribute="leading" secondItem="Hvh-1a-GQa" secondAttribute="trailing" constant="-30" id="CSE-fR-6Hx"/>
                                                     <constraint firstItem="Hvh-1a-GQa" firstAttribute="leading" secondItem="xoe-i7-7oC" secondAttribute="trailing" constant="17" id="L0i-hf-oox"/>
-                                                    <constraint firstItem="SzO-Rn-Axg" firstAttribute="leading" secondItem="40G-Ti-wgr" secondAttribute="trailing" constant="30" id="Xd0-6l-Y6C"/>
+                                                    <constraint firstItem="SzO-Rn-Axg" firstAttribute="leading" secondItem="40G-Ti-wgr" secondAttribute="trailing" id="Xd0-6l-Y6C"/>
                                                     <constraint firstItem="SzO-Rn-Axg" firstAttribute="centerY" secondItem="Uhh-c8-SVi" secondAttribute="centerY" id="a8y-ij-xcG"/>
                                                     <constraint firstItem="Hvh-1a-GQa" firstAttribute="centerY" secondItem="Uhh-c8-SVi" secondAttribute="centerY" id="h7K-kN-IqE"/>
                                                     <constraint firstItem="xoe-i7-7oC" firstAttribute="leading" secondItem="Uhh-c8-SVi" secondAttribute="leading" constant="18" id="s5a-Be-yPZ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="SzO-Rn-Axg" secondAttribute="trailing" constant="120" id="udi-JU-3Vu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SzO-Rn-Axg" secondAttribute="trailing" constant="10" id="udi-JU-3Vu"/>
                                                     <constraint firstItem="xoe-i7-7oC" firstAttribute="centerY" secondItem="Uhh-c8-SVi" secondAttribute="centerY" id="wcO-Eh-f9J"/>
                                                 </constraints>
                                             </view>

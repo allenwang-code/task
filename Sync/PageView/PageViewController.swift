@@ -37,7 +37,6 @@ class PageViewController: UIPageViewController {
     private func getMoneyTranferViewController() -> MoneyTranferViewController
     {
         let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MoneyTranferViewController") as! MoneyTranferViewController
-       
         return vc
     }
     

@@ -54,19 +54,9 @@ extension MoneyTranferViewController: UITableViewDelegate, UITableViewDataSource
         let tabViewController = self.tabBarController!.customizableViewControllers![2] as! MarketTabViewController
         tabViewController.searchView.resignFirstResponder()
 
-        
-        //setHeaderVisible(view: tabViewController.HeaderView,
-        //                 visible: !isScrollingDown,
-        //                duration: 0.3,
-        //                animated: true)
-        
         let isScrollingDown = scrollView.contentOffset.y > scrollY
         
         hideHeader(tabViewController, isVisible: !isScrollingDown)
-        
-        //???
-        
-        
         self.tabBarController?.setTabBarVisible(visible: !isScrollingDown, duration: 0.25, animated: true)
        
         scrollY = scrollView.contentOffset.y

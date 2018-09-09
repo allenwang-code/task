@@ -14,7 +14,6 @@
 		DD0926B02145B800001B440C /* MarketTabViewController+UISearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0926AF2145B800001B440C /* MarketTabViewController+UISearchViewDelegate.swift */; };
 		DD0926B22145B877001B440C /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0926B12145B877001B440C /* UIViewControllerExtention.swift */; };
 		DD786CAF214534D40063429D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD786CAE214534D40063429D /* AppDelegate.swift */; };
-		DD786CB1214534D40063429D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD786CB0214534D40063429D /* ViewController.swift */; };
 		DD786CB4214534D40063429D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD786CB2214534D40063429D /* Main.storyboard */; };
 		DD786CB6214534D40063429D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD786CB5214534D40063429D /* Assets.xcassets */; };
 		DD786CB9214534D40063429D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD786CB7214534D40063429D /* LaunchScreen.storyboard */; };
@@ -35,7 +34,6 @@
 		DD0926B12145B877001B440C /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
 		DD786CAB214534D40063429D /* Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD786CAE214534D40063429D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD786CB0214534D40063429D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD786CB3214534D40063429D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD786CB5214534D40063429D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD786CB8214534D40063429D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +57,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD0926B32145D70D001B440C /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				DDD20C0D21454AEE00B0C372 /* PageViewController.swift */,
+				DDD20C0F21454BA500B0C372 /* PageViewController+PageViewDelegate.swift */,
+				DD0926B52145D761001B440C /* Money transfer */,
+				DDD20C07214549D600B0C372 /* InsuranceViewController.swift */,
+				DDD20C09214549E100B0C372 /* CreditViewController.swift */,
+				DDD20C0B214549ED00B0C372 /* LoanViewController.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		DD0926B42145D738001B440C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DD0926AD2145B51E001B440C /* UITabBarExtension.swift */,
+				DD0926B12145B877001B440C /* UIViewControllerExtention.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DD0926B52145D761001B440C /* Money transfer */ = {
+			isa = PBXGroup;
+			children = (
+				DDD20C05214549C200B0C372 /* MoneyTranferViewController.swift */,
+				DD0926A7214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift */,
+			);
+			path = "Money transfer";
+			sourceTree = "<group>";
+		};
 		DD786CA2214534D40063429D = {
 			isa = PBXGroup;
 			children = (
@@ -79,23 +108,15 @@
 			isa = PBXGroup;
 			children = (
 				DD786CAE214534D40063429D /* AppDelegate.swift */,
-				DD786CB0214534D40063429D /* ViewController.swift */,
 				DD786CB2214534D40063429D /* Main.storyboard */,
 				DD786CB5214534D40063429D /* Assets.xcassets */,
 				DD786CB7214534D40063429D /* LaunchScreen.storyboard */,
 				DD786CBA214534D40063429D /* Info.plist */,
-				DDD20C05214549C200B0C372 /* MoneyTranferViewController.swift */,
-				DD0926A7214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift */,
-				DDD20C07214549D600B0C372 /* InsuranceViewController.swift */,
-				DDD20C09214549E100B0C372 /* CreditViewController.swift */,
-				DDD20C0B214549ED00B0C372 /* LoanViewController.swift */,
-				DDD20C0D21454AEE00B0C372 /* PageViewController.swift */,
-				DDD20C0F21454BA500B0C372 /* PageViewController+PageViewDelegate.swift */,
-				DD0926A921458448001B440C /* Advert.swift */,
 				DD0926AB2145B030001B440C /* MarketTabViewController.swift */,
 				DD0926AF2145B800001B440C /* MarketTabViewController+UISearchViewDelegate.swift */,
-				DD0926AD2145B51E001B440C /* UITabBarExtension.swift */,
-				DD0926B12145B877001B440C /* UIViewControllerExtention.swift */,
+				DD0926B32145D70D001B440C /* PageView */,
+				DD0926A921458448001B440C /* Advert.swift */,
+				DD0926B42145D738001B440C /* Extension */,
 			);
 			path = Sync;
 			sourceTree = "<group>";
@@ -172,7 +193,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD786CB1214534D40063429D /* ViewController.swift in Sources */,
 				DDD20C0E21454AEE00B0C372 /* PageViewController.swift in Sources */,
 				DD0926A8214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift in Sources */,
 				DDD20C06214549C200B0C372 /* MoneyTranferViewController.swift in Sources */,
