@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		DD0926A8214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0926A7214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift */; };
 		DD0926AA21458448001B440C /* Advert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0926A921458448001B440C /* Advert.swift */; };
+		DD0926AC2145B030001B440C /* MarketTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0926AB2145B030001B440C /* MarketTabViewController.swift */; };
+		DD0926AE2145B51E001B440C /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0926AD2145B51E001B440C /* UITabBarExtension.swift */; };
+		DD0926B02145B800001B440C /* MarketTabViewController+UISearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0926AF2145B800001B440C /* MarketTabViewController+UISearchViewDelegate.swift */; };
+		DD0926B22145B877001B440C /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0926B12145B877001B440C /* UIViewControllerExtention.swift */; };
 		DD786CAF214534D40063429D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD786CAE214534D40063429D /* AppDelegate.swift */; };
 		DD786CB1214534D40063429D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD786CB0214534D40063429D /* ViewController.swift */; };
 		DD786CB4214534D40063429D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD786CB2214534D40063429D /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		DD0926A7214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoneyTransferViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		DD0926A921458448001B440C /* Advert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advert.swift; sourceTree = "<group>"; };
+		DD0926AB2145B030001B440C /* MarketTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTabViewController.swift; sourceTree = "<group>"; };
+		DD0926AD2145B51E001B440C /* UITabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
+		DD0926AF2145B800001B440C /* MarketTabViewController+UISearchViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarketTabViewController+UISearchViewDelegate.swift"; sourceTree = "<group>"; };
+		DD0926B12145B877001B440C /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
 		DD786CAB214534D40063429D /* Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD786CAE214534D40063429D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD786CB0214534D40063429D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +92,10 @@
 				DDD20C0D21454AEE00B0C372 /* PageViewController.swift */,
 				DDD20C0F21454BA500B0C372 /* PageViewController+PageViewDelegate.swift */,
 				DD0926A921458448001B440C /* Advert.swift */,
+				DD0926AB2145B030001B440C /* MarketTabViewController.swift */,
+				DD0926AF2145B800001B440C /* MarketTabViewController+UISearchViewDelegate.swift */,
+				DD0926AD2145B51E001B440C /* UITabBarExtension.swift */,
+				DD0926B12145B877001B440C /* UIViewControllerExtention.swift */,
 			);
 			path = Sync;
 			sourceTree = "<group>";
@@ -165,8 +177,12 @@
 				DD0926A8214583F3001B440C /* MoneyTransferViewController+TableViewDelegate.swift in Sources */,
 				DDD20C06214549C200B0C372 /* MoneyTranferViewController.swift in Sources */,
 				DDD20C0A214549E100B0C372 /* CreditViewController.swift in Sources */,
+				DD0926B02145B800001B440C /* MarketTabViewController+UISearchViewDelegate.swift in Sources */,
+				DD0926AE2145B51E001B440C /* UITabBarExtension.swift in Sources */,
+				DD0926B22145B877001B440C /* UIViewControllerExtention.swift in Sources */,
 				DD0926AA21458448001B440C /* Advert.swift in Sources */,
 				DD786CAF214534D40063429D /* AppDelegate.swift in Sources */,
+				DD0926AC2145B030001B440C /* MarketTabViewController.swift in Sources */,
 				DDD20C1021454BA500B0C372 /* PageViewController+PageViewDelegate.swift in Sources */,
 				DDD20C0C214549ED00B0C372 /* LoanViewController.swift in Sources */,
 				DDD20C08214549D600B0C372 /* InsuranceViewController.swift in Sources */,

@@ -12,7 +12,7 @@ class PageViewController: UIPageViewController {
 
     lazy var pages: [UIViewController] = {
         return [
-            self.getViewController(withIdentifier: "MoneyTranferViewController"),
+            getMoneyTranferViewController(),
             self.getViewController(withIdentifier: "InsuranceViewController"),
             self.getViewController(withIdentifier: "CreditViewController"),
             self.getViewController(withIdentifier: "LoanViewController"),
@@ -32,6 +32,13 @@ class PageViewController: UIPageViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func getMoneyTranferViewController() -> MoneyTranferViewController
+    {
+        let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MoneyTranferViewController") as! MoneyTranferViewController
+       
+        return vc
     }
     
     private func getViewController(withIdentifier identifier: String) -> UIViewController

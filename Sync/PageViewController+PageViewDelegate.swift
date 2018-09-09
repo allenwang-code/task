@@ -12,7 +12,6 @@ import UIKit
 extension PageViewController: UIPageViewControllerDataSource,
 UIPageViewControllerDelegate {
     
-    //获取前一个页面
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore
         viewController: UIViewController) -> UIViewController? {
@@ -33,7 +32,6 @@ UIPageViewControllerDelegate {
         return pages[previousIndex]
     }
     
-    //获取后一个页面
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerAfter
         viewController: UIViewController) -> UIViewController? {
