@@ -22,7 +22,7 @@ extension MoneyTranferViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400
+        return 410
     }
 }
 
@@ -31,10 +31,15 @@ class AdvertCell: UITableViewCell {
     @IBOutlet weak var advertBtn: UIButton!
     
     var advert: Advert! {
-    didSet {
-        guard (self.advert) != nil else { return }
-    self.advertBtn.setImage(advert.imgageUrl, for: .normal)
-    }
+        didSet {
+            guard (self.advert) != nil else { return }
+            
+            self.advertBtn.setImage(advert.imgageUrl, for: .normal)
+            self.advertBtn.layer.shadowOpacity = 0.5
+            self.advertBtn.layer.shadowOffset = CGSize(width: 0, height: 0)
+            self.advertBtn.layer.shadowRadius = 0
+            self.advertBtn.layer.shadowColor = UIColor.darkGray.cgColor
+        }
     }
     
     @IBAction func AdvertBtnDidClick(_ sender: UIButton) {
